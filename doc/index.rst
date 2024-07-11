@@ -11,4 +11,3 @@ Welcome to Example's documentation!
    :caption: Contents:
 
    some-feature.md
-   another-feature.md
