@@ -12,8 +12,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
       - name: Install dependencies
+        working-directory: doc
         run: |
-          pip install sphinx sphinx_rtd_theme myst_parser
+          pip install -r requierments.txt
       - name: Sphinx build
         run: |
           sphinx-build doc _build
