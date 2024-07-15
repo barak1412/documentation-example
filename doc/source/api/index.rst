@@ -6,9 +6,6 @@
 Welcome to Example's documentation!
 ===================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   some-feature.md
-   package1
+.. autosummary::
+   :toctree: api/
+      package1
