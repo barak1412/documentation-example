@@ -16,9 +16,8 @@ jobs:
         run: |
           pip install -r requierments.txt
       - name: Sphinx build
-        working-directory: doc
         run: |
-          make html
+          sphinx-build doc/source _build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
