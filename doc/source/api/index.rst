@@ -6,6 +6,10 @@
 Welcome to Example's documentation!
 ===================================
 
-.. autosummary::
-   :toctree: api/
-      package1
+.. grid::
+    .. grid-item-card::
+
+        .. toctree::
+           :maxdepth: 2
+
+           package1
