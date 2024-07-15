@@ -16,6 +16,7 @@ jobs:
         run: |
           pip install -r requierments.txt
       - name: Sphinx build
+        working-directory: doc
         run: |
           make
       - name: Deploy to GitHub Pages
